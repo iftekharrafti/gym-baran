@@ -1,7 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+  --font-mono: 'Poppins', 'Darker Grotesque',ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono'
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
@@ -85,14 +89,13 @@ body {
   overflow-x: hidden;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+body{
+  background: #E5E5E5;
+}
+
+.container{
+  width: 90%;
+  margin: auto;
 }
 
 a {
@@ -103,5 +106,79 @@ a {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+@media (max-width: 640px) {
+  .top-left {
+    top: 10px;
+    left: 0px;
+  }
+  .top-right{
+    top: 20px;
+    right: 0px;
+  }
+  .bottom-left {
+    bottom: 20px;
+    left: 0px;
+  }
+  .bottom-right{
+    bottom: 0px;
+    right: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .top-left {
+    top: 50px;
+    left: 60px;
+  }
+  .top-right{
+    top: 60px;
+    right: 120px;
+  }
+  .bottom-left {
+    bottom: 60px;
+    left: 120px;
+  }
+  .bottom-right{
+    bottom: 30px;
+    right: 30px;
+  }
+}
+
+@media (min-width: 920px) {
+  .top-left {
+    top: 60px;
+    left: 0px;
+  }
+  .top-right{
+    top: 70px;
+    right: 10px;
+  }
+  .bottom-left {
+    bottom: 60px;
+    left: 10px;
+  }
+  .bottom-right{
+    bottom: 30px;
+    right: 0px;
+  }
+} 
+
+
+
+@media (max-width: 640px) {
+  .work-vec-1{
+    bottom: 30px;
+    left: 0px;
+  }
+  .work-vec-2{
+    bottom: 40px;
+    right: 0px;
+  }
+  .work-vec-3{
+    top: 30px;
+    left: 0px;
   }
 }
